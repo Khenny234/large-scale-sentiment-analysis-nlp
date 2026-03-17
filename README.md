@@ -67,6 +67,7 @@ The system follows a structured pipeline:
 
 ![Ranking](model_ranking.png)
 
+
 The framework benchmarked seven models with the following performance:
 
 | Model | Accuracy |
