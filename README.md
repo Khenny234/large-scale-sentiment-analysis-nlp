@@ -1,33 +1,34 @@
 # Large-Scale Sentiment Analysis and Predictive Modelling Framework
 
+![Architecture](architecture.png)
+
 ## Overview
 
-This project presents the design and implementation of a large-scale Natural Language Processing (NLP) and predictive modelling framework for analysing Amazon Fine Food Reviews.
+This project presents the design and implementation of an end-to-end Natural Language Processing (NLP) and predictive modelling system for large-scale sentiment analysis of Amazon Fine Food Reviews.
 
-The system processes over **568,000 customer reviews**, transforming unstructured text into structured sentiment insights and predictive outputs. It combines text preprocessing, feature engineering, multi-model benchmarking, and business intelligence delivery to support sentiment monitoring and data-driven decision-making.
+The system processes over **568,000 customer reviews**, transforming unstructured textual data into structured sentiment insights and predictive outputs. It integrates data preprocessing, feature engineering, multi-model benchmarking, and business intelligence delivery into a unified analytical framework.
 
-## Objectives
+---
 
-- Build an end-to-end NLP pipeline for large-scale sentiment analysis
-- Benchmark multiple machine learning and deep learning models
-- Evaluate model performance using structured metrics
-- Deliver insights through an interactive Power BI dashboard
+## Key Results
 
-## Dataset
+- Processed over **568,000 customer reviews**
+- Achieved up to **98% classification accuracy (Random Forest)**
+- Benchmarked **7 machine learning and deep learning models**
+- Delivered an **interactive Power BI dashboard** for sentiment monitoring and trend analysis
 
-The project uses the **Amazon Fine Food Reviews** dataset, containing over **568,000 reviews** with associated metadata and review scores.
+---
 
 ## Workflow
 
-The project pipeline consists of the following stages:
+The system follows a structured pipeline:
 
 1. **Data Ingestion**
-   - Load and inspect review data
-   - Handle missing values and duplicates
+   - Loading and validation of large-scale review data
+   - Handling missing values and duplicates
 
 2. **Text Preprocessing**
-   - Lowercasing
-   - HTML and punctuation removal
+   - Lowercasing and text cleaning
    - Tokenisation
    - Stopword removal
    - Lemmatisation
@@ -35,38 +36,42 @@ The project pipeline consists of the following stages:
 3. **Feature Engineering**
    - TF-IDF vectorisation
    - CountVectorizer
-   - Topic modelling with LDA
+   - Topic modelling using LDA
 
 4. **Sentiment Analysis**
    - VADER sentiment scoring
-   - Sentiment categorisation into positive, negative, and neutral
+   - Classification into positive, negative, and neutral categories
 
 5. **Model Development**
-   - Multinomial Naive Bayes
-   - Logistic Regression
-   - Support Vector Machine (SVM)
-   - Random Forest
-   - LSTM
-   - Temporal Convolutional Network (TCN)
-   - Hybrid Model
+   - Multinomial Naive Bayes  
+   - Logistic Regression  
+   - Support Vector Machine (SVM)  
+   - Random Forest  
+   - LSTM  
+   - Temporal Convolutional Network (TCN)  
+   - Hybrid Model  
 
 6. **Model Evaluation**
-   - Accuracy
-   - Precision
-   - Recall
-   - F1-score
-   - Comparative model ranking
+   - Accuracy, Precision, Recall, F1-score
+   - Comparative model benchmarking and ranking
 
 7. **Analytics Delivery**
-   - Power BI dashboard for sentiment monitoring and trend analysis
+   - Integration into Power BI dashboard
+   - Real-time sentiment monitoring and trend analysis
+
+---
 
 ## Model Performance
 
-The framework benchmarked seven models with the following overall accuracy scores:
+![Accuracy](model_accuracy.png)
+
+![Ranking](model_ranking.png)
+
+The framework benchmarked seven models with the following performance:
 
 | Model | Accuracy |
 |------|----------|
-| Random Forest | 0.98 |
+| Random Forest | **0.98** |
 | SVM | 0.97 |
 | TCN | 0.96 |
 | Logistic Regression | 0.95 |
@@ -76,50 +81,59 @@ The framework benchmarked seven models with the following overall accuracy score
 
 The **Random Forest model** achieved the best overall performance.
 
+---
+
+## Dashboard Output
+
+The predictive outputs were integrated into an interactive Power BI dashboard, enabling:
+
+- Sentiment distribution analysis  
+- Trend monitoring across large datasets  
+- Keyword exploration via word clouds  
+- Stakeholder-focused reporting  
+
+---
+
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
-- TensorFlow / Keras
-- Matplotlib
-- Seaborn
-- Power BI
+- Python  
+- Pandas & NumPy  
+- Scikit-learn  
+- NLTK  
+- TensorFlow / Keras  
+- Matplotlib  
+- Power BI  
 
-## Project Outputs
-
-This project includes:
-
-- NLP preprocessing and sentiment analysis notebook
-- model benchmarking results
-- clean visualisations for model comparison
-- system architecture diagram
-- Power BI dashboard screenshot / report
+---
 
 ## Key Contribution
 
-I led the end-to-end design and implementation of this framework, including:
+I led the end-to-end design and implementation of this system as the primary technical contributor. This included:
 
-- defining the analytical approach
-- engineering the preprocessing pipeline
-- building and benchmarking multiple models
-- integrating predictive outputs into a stakeholder-facing analytics dashboard
+- Defining the analytical and modelling approach  
+- Engineering the full NLP preprocessing pipeline  
+- Developing and benchmarking multiple machine learning and deep learning models  
+- Integrating predictive outputs into a structured business intelligence dashboard  
+
+---
 
 ## Business Relevance
 
-This project demonstrates how large-scale unstructured customer feedback can be transformed into structured business intelligence. The solution is directly applicable to digital platforms, e-commerce, and customer insight teams seeking to improve product quality, customer experience, and decision-making through sentiment analytics.
+This project demonstrates the ability to design scalable data-driven systems that convert unstructured customer feedback into actionable business intelligence.
+
+The solution is directly applicable to industries such as e-commerce and digital platforms, where large-scale sentiment analysis is critical for improving customer experience, product quality, and decision-making.
+
+---
 
 ## Repository Structure
 
 ```text
-project/
+large-scale-sentiment-analysis-nlp/
 │
+├── README.md
 ├── Final Thesis Analysis.ipynb
 ├── Final Thesis Analysis.pdf
 ├── Kenny power bi.pdf
 ├── architecture.png
-├── model_accuracy_clean.png
+├── model_accuracy.png
 ├── model_ranking.png
-└── README.md
